@@ -5,26 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/chad.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/chad.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/chad.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     <link href="style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-    <title>ChadGPT</title>
-    <meta name="description" content="What if ChatGPT were a chad?">
+    <title>CatGPT</title>
+    <meta name="description" content="What if ChatGPT were a cat?">
 </head>
 
 <body>
 
     <div id="container">
         <div class="header">
-            <h1>CatGPT</h1>
-            <p>What if ChatGPT were a cat?</p>
-        </div>
-            
+            <h1>ChadGPT</h1>
+            <p>What if ChatGPT were a chad?</p>
         </div>
         <div id="chatcontainer">
 
@@ -32,42 +30,21 @@
                 <div class="chat-bubble-container chat-gpt-bubble-container">
                     <div class="profile-picture"><img src="/images/avatar.png" height="100%" /></div>
                     <div class="chat-bubble chat-gpt-bubble">
-                        Bruh, bruh bruh bruh bruh!
+                        Bruh, bruh bruh, bruh bruh?
                     </div>
                 </div>
 
-                
             </div>
             <div id="input-area">
-                <div id="in-chat-ad">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6471077524900522"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-gw-1+16-3y+52"
-     data-ad-client="ca-pub-6471077524900522"
-     data-ad-slot="3559298991"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-                </div>
-
                 <div id="input-container">
                     <form id="form">
-                        <input type="text" placeholder="Type your message here" id="user-input" />
+                        <input type="text" placeholder="Type your message here" id="user-input" autocomplete="off" />
                     </form>
                     <a><i class="fas fa-paper-plane"></i></a>
 
                 </div>
-                <p class="disclaimer">This site was created by <a href="https://www.twitter.com/woutervd"
-                        target="_blank">Wouter van Dijke</a> (with some help from ChatGPT) | <a href="#"
-                        onclick="handleInfoClick" id="infoBtn">click here to learn more about this site</a></p>
-                <p class="disclaimer">Did CatGPT make you smile? Donate to a charity for <a
-                        href="https://secure.petsmartcharities.org/give/219478/#!/donation/checkout"
-                        target="_blank">normal sized cats</a> or <a
-                        href="https://support.worldwildlife.org/site/Donation2?df_id=12391&12391.donation=form1"
-                        target="_blank">really big cats</a>.</p>
+                <p class="disclaimer">This site was created by <a href="https://github.com/tanisha-byte"
+                        target="_blank">Tanisha Sharma</a> (with some help from ChatGPT) </p>
             </div>
         </div>
     </div>
@@ -77,7 +54,7 @@
         const chatArea = document.getElementById("chat");
         const sendBtn = document.querySelector(".fa-paper-plane");
         const form = document.getElementById('form');
-        const infoBtn = document.getElementById('infoBtn')
+        const infoBtn = document.getElementById('infoBtn');
         let userMeowed = false;
 
         function handleSubmit(event) {
@@ -100,16 +77,16 @@
 
                 // Generate the CatGPT response
                 
-                if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'meow' && userMeowed == false) { // Hurray you found some easter eggs🐰🥚
-                    meows = "Imitation is the sincerest form of flattery that mediocrity can pay to greatness.";
+                if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'bruh' && userMeowed == false) { // Hurray you found some easter eggs🐰🥚
+                    meows = "Imitation is the sincerest form of flattery that mediocrity can offer, like trying to rap along to Eminem but ending up sounding like a tone-deaf parrot.";
                     userMeowed = true;
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a dog" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a dog") {
-                    meows = "Woof?"
+                    meows = "Woof?";
                 } else {
                     var numberOfMeows = Math.floor(Math.random() * 15); // Random number of meows between 0 and 14.
                     var meows = "Bruh"; // Always start with 1 capitalized meow
                     if (numberOfMeows == 0) {
-                        meows += "." // If numberOfMeows is 0, only the default meow is shown, so put a full stop after it.
+                        meows += "."; // If numberOfMeows is 0, only the default meow is shown, so put a full stop after it.
                     } else {
                         for (var i = 0; i < numberOfMeows; i++) {
 
@@ -133,21 +110,21 @@
                 let newBubble2 = document.createElement("div");
                 newBubble2.classList.add("chat-bubble", "chat-gpt-bubble");
                 newBubble2.innerHTML = "...."; // At first, only show an ellipsis
-                newBubble2Container.appendChild(newBubble2)
+                newBubble2Container.appendChild(newBubble2);
                 chatArea.appendChild(newBubble2Container);
-                form.scrollIntoView() // Scroll down, so the input field is at the bottom of the page again
-                let currentMeow = 0
+                form.scrollIntoView(); // Scroll down, so the input field is at the bottom of the page again
+                let currentMeow = 0;
 
                 let meowLoop = setInterval(() => { // Interval to show more of the reply every 100 milliseconds (simulating typing behaviour)
                     if (currentMeow < meows.length) {
-                        currentMeow += Math.floor(Math.random() * 10) // Show between 0 and 10 more characters
+                        currentMeow += Math.floor(Math.random() * 10); // Show between 0 and 10 more characters
                         newBubble2.innerHTML = meows.slice(0, currentMeow) + "█"; // While typing, end the string with a block character
                     } else {
                         newBubble2.innerHTML = meows; // When finished, put the entire response in the bubble, without block character
                         clearInterval(meowLoop);
                         userInput.focus(); // Focus the input again, so user can type a new response
                     }
-                }, 100)
+                }, 100);
 
             }
         }
@@ -182,23 +159,23 @@
                     let currentWord = 0;
                     let singlelineLoop = setInterval(() => { // Loop over the words, to simulate typing behaviour
                         if (currentWord < currentLineText.length) {
-                            currentWord += Math.floor(Math.random() * 10) + 5 // Return between 5 and 15 characters
+                            currentWord += Math.floor(Math.random() * 10) + 5; // Return between 5 and 15 characters
                             newBubble3.innerHTML = currentLineText.slice(0, currentWord) + "█"; // While typing, end the string with a block character
                         } else {
                             newBubble3.innerHTML = currentLineText; // When finished, put the entire response in the bubble, without block character
                             clearInterval(singlelineLoop);
                             form.scrollIntoView();
                             userInput.focus(); // Focus the input again, so user can type a new response
-                            createLine(i + 1)  // Call this function again using i+1 so the next line is created
+                            createLine(i + 1);  // Call this function again using i+1 so the next line is created
                         }
                     }, 80)
 
-                    newBubble3Container.appendChild(newBubble3)
+                    newBubble3Container.appendChild(newBubble3);
                     chatArea.appendChild(newBubble3Container);
 
                 }
             }
-            createLine(0) // Start creating the respone with the first line
+            createLine(0); // Start creating the respone with the first line
 
 
         }

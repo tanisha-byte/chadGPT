@@ -39,21 +39,14 @@ body {
   padding: 20px;
   width: 100%;
   display: flex;
-  
-  background-color: #343541;
-  color: white;
-  justify-content: space-evenly;
-
-}
-
-.header-text {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #343541;
+  color: white;
+  justify-content: center;
 
 }
-
 
 .header h1 {
   font-size: 64px;
@@ -90,11 +83,6 @@ body {
   flex-wrap: wrap;
 }
 
-#in-chat-ad {
-  width: 100%;
-  margin-bottom: 15px;
-  display: contents;
-}
 .chat-gpt-bubble-container {
   background-color: #444654;
 }
@@ -106,12 +94,12 @@ body {
 
 
 .profile-picture {
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .profile-picture img {
-  border-radius: .5px;
+  border-radius: 5px;
 }
 
 .chat-bubble {
@@ -152,8 +140,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 #input-container {
@@ -164,7 +150,7 @@ body {
 }
 
 #form {
-  width: 100%;
+  width: 60%;
 }
 
 #input-area input {
